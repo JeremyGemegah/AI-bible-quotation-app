@@ -21,8 +21,8 @@ Ensure you have the following installed:
 ### Setup
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-username/ai-bible-quotation-app.git
-   cd ai-bible-quotation-app
+   git clone https://github.com/JeremyGemegah/AI-bible-quotation-app.git
+   cd AI-bible-quotation-app
    ```
 2. **Install dependencies:**
    ```sh
