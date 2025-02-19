@@ -101,7 +101,7 @@ const speechmaticsConfig ={
                       maxOutputTokens: 2048,
                       response_mime_type: "application/json",
                           "response_schema": {
-                    "type": "ARRAY",
+                    "type": "ARRAY", 
                     "items": {
                       "type": "OBJECT",
                       "properties": {
@@ -110,7 +110,7 @@ const speechmaticsConfig ={
                         "verses": { 
                           "type": "ARRAY",
                           "items": { "type": "INTEGER" }
-                          
+
                         }
                       }
                     }
