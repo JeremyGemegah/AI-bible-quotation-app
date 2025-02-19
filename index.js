@@ -110,6 +110,7 @@ const speechmaticsConfig ={
                         "verses": { 
                           "type": "ARRAY",
                           "items": { "type": "INTEGER" }
+                          
                         }
                       }
                     }
