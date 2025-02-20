@@ -47,6 +47,8 @@ Start the application using:
 npm start
 ```
 
+NOW HEAD OVER TO YOUR BROWSER AND VISIT "localhost:5000"
+
 ### How It Works
 1. The app continuously listens for speech input.
 2. Audio is streamed to Speechmatics for real-time transcription.
