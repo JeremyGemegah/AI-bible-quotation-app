@@ -10,7 +10,7 @@ const app = express();
 const port = 5000;
 
 app.use(cors());
-app.get('/', (req, res) => res.send('Hello from Node.js Backend'));
+
 
 // WebSocket Server
 const server = app.listen(port, () => console.log(`Server running on port ${port}`));
