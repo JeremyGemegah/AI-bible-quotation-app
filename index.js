@@ -5,13 +5,11 @@ const cors = require('cors');
 const path = require('path')
 const https = require('https')
 const {spawn} = require('child_process');
-
-
-
+const dotenv = require('dotenv').config()
 
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT;
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, './build')))
@@ -52,8 +50,7 @@ const speechmaticsConfig ={
 
   //scripture extractor endpoint
   const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
-
-  const API_KEY = "AIzaSyBHjgb6uZLGIZmO8mFSmX6gTSZ3F9M1iNQ"
+  
 
   let conversationHistory = [] //stores temporary context of text sent to Gemini
 
@@ -135,7 +132,7 @@ const speechmaticsConfig ={
                   method: 'POST',
                   headers: {
                       'Content-Type': 'application/json',
-                      'x-goog-api-key': API_KEY
+                      'x-goog-api-key': process.env.GEMINI_API_KEY
                   },
                 };
                 
@@ -210,7 +207,7 @@ const speechmaticsConfig ={
 
       const speechmaticsSocket = new WebSocket(speechmatics_endpoint,{
         headers:{
-            'authorization': 'Bearer eKxhFdm4xcpehHiBxJuIgdG4cFabNgGN'
+            'authorization': `Bearer ${process.env.SPEECHMATICS_API_KEY}`
         }
     });
 

@@ -28,14 +28,13 @@ Ensure you have the following installed:
    ```sh
    npm install
    ```
-3. **Set up environment variables(optional):**
-
-* For now I have used my own API keys so if you want you can skip this step
+3. **Set up environment variables:**
    - Create a `.env` file in the root directory.
    - Add the following variables:
      ```env
      SPEECHMATICS_API_KEY=your_speechmatics_api_key
      GEMINI_API_KEY=your_gemini_api_key
+     PORT=your prefered port (eg. 3000)
      ```
   - Replace them in the code with each preceeded by "process.env"
 
