@@ -34,7 +34,7 @@ Ensure you have the following installed:
      ```env
      SPEECHMATICS_API_KEY=your_speechmatics_api_key
      GEMINI_API_KEY=your_gemini_api_key
-     PORT=your prefered port (eg. 3000)
+     PORT=your preferred port (eg. 3000)
      ```
   - Replace them in the code with each preceeded by "process.env"
 
